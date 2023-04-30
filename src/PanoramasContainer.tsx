@@ -1,6 +1,7 @@
 import React from 'react'
 import { Stack } from '@fluentui/react'
-import { Button, Input, Toolbar } from '@fluentui/react-components'
+import { Button, Toolbar } from '@fluentui/react-components'
+import PanoramasList from './PanoramasList'
 
 const PanoramasContainer = () => {
 	return (
@@ -9,6 +10,7 @@ const PanoramasContainer = () => {
 				<input type='file' name='file' id='fileinput' multiple />
 				<Button size='small'>Upload</Button>
 			</Toolbar>
+			<PanoramasList />
 		</Stack>
 	)
 }
